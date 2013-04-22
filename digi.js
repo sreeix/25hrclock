@@ -1,6 +1,14 @@
 $(function  () {
-  var startTime = new Date(Date.parse(window.localStorage['twentyfivehourclock_starttime'])) || defaultStart();
-
+  var defaultStart = function today() {
+    var d = new Date();
+    d.setHours(0);
+    d.setMinutes(0)
+    d.setSeconds(0);
+    window.localStorage['twentyfivehourclock_starttime'] = d.toString();
+    return d.getTime();
+  }
+  var time = Date.parse(window.localStorage['twentyfivehourclock_starttime']) || defaultStart();
+  var startTime = new Date(time)
 
   $("#twentyfourhour").digitalclock();
 
@@ -27,13 +35,4 @@ $(function  () {
       $this.text("Hide");
     }
   });
-
-  var defaultStart = function today() {
-    var d = new Date();
-    d.setHours(0);
-    d.setMinutes(0)
-    d.setSeconds(0);
-    window.localStorage['twentyfivehourclock_starttime'] = d.toString();
-    return d;
-  }
-})
+});
