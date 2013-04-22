@@ -1,6 +1,7 @@
 <html>
 <head>
 <title> 25 hr Clock</title>
+  <link rel="stylesheet" href="bootstrap.css" />
   <link rel="stylesheet" href="clock.css" />
   <script src="jquery.js"></script>
   <script src="jquery.timeago.js"></script>
@@ -9,18 +10,23 @@
 
 </head>
   <body>
-  <a href="#" class='reset'>Reset</a>
-
-  <div>
-    <a href="#" class='visibility'>Hide</a>
-    <div id = "twentyfivehour"></div>
-    Started <abbr class="timeago" ></abbr>
-  </div>
-
-
-  <div>
-    <a href="#" class='visibility'>Hide</a>
-    <div id = "twentyfourhour"></div>
-  </div>
+    <div class="clear"></div>
+    <section class="top-part span9">
+      <div id = "twentyfivehour" class="span7 no-margin"></div>
+      <article class="span1">
+        <a href="#" class='reset btn btn-danger common'>Reset</a>
+        <div class="clear"></div>
+        <a href="#" class='visibility common btn btn-info'>Hide</a>
+      </article>
+      <div class="clear"></div>
+      <span class="started-text">Started <abbr class="timeago" ></abbr></span>
+    </section>
+    <div class="clear"></div>
+    <section class="bottom-part span9">
+      <div id = "twentyfourhour" class="span7 no-margin"></div>
+      <article class="span1">
+        <a href="#" class='visibility common no-margin btn btn-info'>Hide</a>
+      </article>
+    </section>
   </body>
 </html>

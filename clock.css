@@ -1,7 +1,28 @@
 body{
-  background-color:#222;
-  margin:100px auto;
-  text-align:center;
+  background-color: #222;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+.common {
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+section {
+  border: 2px solid #666;
+  border-radius: 8px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+
+.started-text {
+  color: #fff;
 }
 
 .digit, .colon{
