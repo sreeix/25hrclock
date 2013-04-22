@@ -1,0 +1,36 @@
+<html>
+<head>
+<title> 25 hr Clock</title>
+  <link rel="stylesheet" href="bootstrap.css" />
+  <link rel="stylesheet" href="clock.css" />
+  <script src="jquery.js"></script>
+  <script src="jquery.timeago.js"></script>
+  <script src="digitalclock.js"></script>
+  <script src="digi.js"></script>
+
+</head>
+  <body>
+    <div class="clear"></div>
+
+    <section class="top-part span9">
+      <h2> 25 Hour clock</h2>
+      <div id = "twentyfivehour" class="span7 no-margin"></div>
+      <article class="span1">
+        <a href="#" class='reset btn btn-danger common'>Reset</a>
+        <div class="clear"></div>
+        <a href="#" data-hide-element = '#twentyfivehour' class='visibility common btn btn-info'>Hide</a>
+      </article>
+      <div class="clear"></div>
+      <h6> Started <abbr class="timeago" ></abbr></h6>
+    </section>
+    <div class="clear"></div>
+    <section class="bottom-part span9">
+      <h2> Normal clock</h2>
+      <div id = "twentyfourhour" class="span7 no-margin"></div>
+      <article class="span1">
+        <a href="#" data-hide-element = '#twentyfourhour' class='visibility common no-margin btn btn-info'>Hide</a>
+      </article>
+    </section>
+    <h6>Cargo culted from <a href='http://codepen.io/FWeinb/pen/LmKvl'>codepen</a></h6>
+  </body>
+</html>
