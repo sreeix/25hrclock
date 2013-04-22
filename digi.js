@@ -18,7 +18,7 @@ $(function  () {
   });
 
   $(".visibility").click(function (e) {
-    var $this = $(this), $clock = $this.next();
+    var $this = $(this), $clock = $($this.data("hide-element"));
     if($clock.is(":visible")){
       $clock.hide('slide');
       $this.text("Show");
@@ -33,6 +33,7 @@ $(function  () {
     d.setHours(0);
     d.setMinutes(0)
     d.setSeconds(0);
+    window.localStorage['twentyfivehourclock_starttime'] = d.toString();
     return d;
   }
 })

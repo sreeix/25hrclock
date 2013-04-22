@@ -20,6 +20,9 @@ section {
   margin-bottom: 15px;
 }
 
+h2, h3, h4 {
+  color: #fff;
+}
 
 .started-text {
   color: #fff;
